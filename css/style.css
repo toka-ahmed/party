@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+/*----------- Start Home-------------- */
+#home{
+    background-image: url(../images/events-heavenly-header.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 660px;
+    position: relative;
+    color: white;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 46, 51 , 0.6);
+}
+.home-content{
+    padding: 16px;
+    margin-left: 0;
+}
+.home-content h1, p {
+    text-align: center;
+}
+.home-content h1 {
+    margin-top: 200px;
+    font-size: 60px;
+}
+/* **----sidebar--- */
+
+.sideLeft{
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    overflow-x: hidden;
+    z-index: 999;
+}
+.home-content .open-Nav{
+    cursor: pointer;
+    font-size: 28px;
+}
+.sideLeft .close-button{
+    padding: 10px 10px;
+    margin-top: 40px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.sideLeft .close-button  i {
+    color: white;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.sideLeft .close-button  i:hover{
+    color: brown;
+}
+.sideLeft ul {
+    margin-top: 60px;
+}
+.sideLeft ul li {
+    padding: 20px 8px 20px 32px;
+    font-size: 25px;
+}
+.sideLeft ul li a {
+    color: white;
+    transition: 0.4s;
+    display: block;
+}
+ol, ul {
+    padding-left: 0.5rem;
+}
+.sideLeft ul li a:hover{
+    color: brown;
+}
+.open-Nav{
+    font-size: 25px;
+}
+
+
+/* start sction join */
+#join{
+    background-image: url(../images/invitation-2508607__340.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 340px;
+    position: relative;
+    margin-top: 60px;
+    color: white;
+}
+ .time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    gap: 5px;
+  }
+ .time .unit {
+    border: 2px solid #d4d4d4;
+    text-align: center;
+    border-radius: 6px;
+    width: 150px;
+    transition: 0.3s;
+}
+ .time .unit span {
+    display: block;
+    transition: 0.3s;
+}
+ .time .unit span:first-child {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 15px;
+    color:  #fff;
+  }
+ .time .unit span:last-child {
+    font-size: 16px;
+    padding: 8px 10px;
+    border-top: 2px solid #d4d4d4;
+  } 
+ .time .unit:hover,
+ .time .unit:hover span:last-child {
+      border-color:  #2196f3ff;
+  }
+
+/* ---slider--------- */
+.bestSinger{
+    background-color: rgba(214, 46, 51 , 0.6);
+    color: white;
+    max-width: 600px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+.singer h3 {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bestSinger .singer p{
+    display: none;
+    background-color: #ccc;
+    color: black;
+    padding: 10px;
+    line-height: 1.7;
+}
+
+/* ------------Section Contact-------------- */
+#contact{
+    margin-top: 70px;
+}
+.container{
+    padding: 100px 0;
+}
+#contact .head h2 {
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#contact .head p {
+    color: #777;
+    font-size: 16px;
+}
+#contact .contact-info {
+    margin-top: 10px;
+}
+#contact .contact-info h4 {
+    color: #444;
+    font-weight: 800;
+    /* margin-bottom: 20px; */
+}
+#contact .contact-info p {
+    line-height: 1.7;
+    color: #777;
+    font-size: 16px;
+}
+#contact .contact-info .icon {
+    margin-top: 50px;
+}
+.contact-info .icon  p{
+    color: #777;
+    font-size: 16px;
+}
+.contact-info .icon p i {
+    margin-right: 20px;
+    color: #777;
+} 
+.contact-info .list-icon {
+    margin-top: 50px;
+    color: #777;
+}
+.contact-info .list-icon i {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #999;
+    text-align: center;
+    line-height: 42px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.contact-info .list-icon i:hover{
+    background-color: red;
+    color: white;
+    border: none;
+}
+.text-aria {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+}
+.form span  {
+    margin-top: 30px;
+    font-size: 18px;
+}
+.form #number{
+    color: red;
+}
+/* ----Footer--------- */
+.footer {
+    background-image: url(../images/design-features.jpg);
+    background-position: center center;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.footer .content a{
+    color: white;
+    transition: .3s;
+}
+.footer .content a:hover {
+    color: red;
+}
+
+/* Design scrollbar */
+::-webkit-scrollbar{
+    width: 18px;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #57f287;
+}
+
+
+/* loder */
+.screenLoading{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    position: relative;
+    width: 108px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .loader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    animation: pulsOut 1.8s ease-in-out infinite;
+    filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.75));
+  }
+  .loader:before {
+    width: 100%;
+    padding-bottom: 100%;
+    box-shadow: inset 0 0 0 1rem #fff;
+    animation-name: pulsIn;
+  }
+  .loader:after {
+    width: calc(100% - 2rem);
+    padding-bottom: calc(100% - 2rem);
+    box-shadow: 0 0 0 0 #fff;
+  }
+
+  @keyframes pulsIn {
+    0% {
+      box-shadow: inset 0 0 0 1rem #fff;
+      opacity: 1;
+    }
+    50%, 100% {
+      box-shadow: inset 0 0 0 0 #fff;
+      opacity: 0;
+    }
+  }
+
+  @keyframes pulsOut {
+    0%, 50% {
+      box-shadow: 0 0 0 0 #fff;
+      opacity: 0;
+    }
+    100% {
+      box-shadow: 0 0 0 1rem #fff;
+      opacity: 1;
+    }
+  }
+      
